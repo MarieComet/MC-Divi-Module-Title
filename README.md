@@ -2,14 +2,14 @@ Divi Title Module
 ========================
 WordPress Plugin
 ---------------
-Contributors: chaton666
-Tags: divi,divi builder,divi module,divi title
-Requires at least: 4.4
-Tested up to: 4.8
-Requires PHP: 5.2.4
-Stable tag: 1.0.0
-License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+* Author: Marie Comet
+* Tags: divi,divi builder,divi module,divi title
+* Requires at least: 4.4
+* Tested up to: 4.8
+* Requires PHP: 5.2.4
+* Stable tag: 1.0.0
+* License: GPLv2 or later
+* License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 This plugin adds a new module to the Divi builder, it allows to easily insert titles without going through the text module.
 
