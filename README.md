@@ -17,6 +17,7 @@ Description
 ---------------
 This plugin adds a new module to the Divi builder, it allows to easily insert titles without going through the text module.
 You will be able to set the level of the title (h1, h2, etc), its color, its size, among others.
+<a href="https://www.elegantthemes.com/gallery/divi/" rel="nofollow">Divi</a> is a registered trademark of Elegant Themes, Inc. This website is not affiliated with nor endorsed by <a href="https://www.elegantthemes.com" rel="nofollow">Elegant Themes</a>.
 
 Installation
 ---------------
