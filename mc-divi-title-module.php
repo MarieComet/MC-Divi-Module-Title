@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Divi Title Module
- * Plugin URI: http://mariecomet.fr/
+ * Plugin URI: https://github.com/MarieComet/MC-Divi-Module-Title/
  * Description: This plugin adds a new module to the Divi builder, it allows to easily insert titles without going through the text module.
  * Version: 1.0.0
  * Author: Marie Comet
