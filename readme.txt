@@ -27,3 +27,10 @@ This plugin require the Divi Builder !
 1. Admin module
 2. Module content
 3. Module design
+
+
+== Changelog ==
+
+= 1.0 =
+* First release
+
