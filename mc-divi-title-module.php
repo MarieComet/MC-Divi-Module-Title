@@ -3,14 +3,14 @@
  * Plugin Name: Divi Title Module
  * Plugin URI: https://github.com/MarieComet/MC-Divi-Module-Title/
  * Description: This plugin adds a new module to the Divi builder, it allows to easily insert titles without going through the text module.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Marie Comet
  * Author URI: http://mariecomet.fr/
  * Requires at least: 4.4
  * Tested up to: 4.8
  *
- * Text Domain: mc-dtm
- * Domain Path: /i18n/languages/
+ * Text Domain: mc-divi-title-module
+ * Domain Path: /i18n/languages
  *
  * @package Divi Title Module
  * @author Marie Comet
@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 function mc_dtm_admin_notice() {
     ?>
     <div class="error">
-        <p><?php _e( 'Divi Title Module require the Divi Builder or the Divi theme to work', 'mc-dtm' ); ?></p>
+        <p><?php _e( 'Divi Title Module require the Divi Builder or the Divi theme to work', 'mc-divi-title-module' ); ?></p>
     </div>  
     <?php
 }
@@ -34,9 +34,9 @@ function mc_init_divi_title_module() {
         class ET_Builder_Module_Title extends ET_Builder_Module {
             function init() {
 
-                load_plugin_textdomain( 'mc-dtm', false, plugin_basename( dirname( __FILE__ ) ) . '/i18n/languages' );
+                load_plugin_textdomain( 'mc-divi-title-module', false, plugin_basename( dirname( __FILE__ ) ) . '/i18n/languages/' );
 
-                $this->name       = esc_html__( 'Title', 'mc-dtm' );
+                $this->name       = esc_html__( 'Title', 'mc-divi-title-module' );
                 $this->slug       = 'et_pb_mc_title';
                 $this->fb_support = true;
 
@@ -57,13 +57,13 @@ function mc_init_divi_title_module() {
                 $this->options_toggles = array(
                     'general'  => array(
                         'toggles' => array(
-                            'main_content' => esc_html__( 'Text', 'mc-dtm' ),
+                            'main_content' => esc_html__( 'Text', 'mc-divi-title-module' ),
                         ),
                     ),
                     'advanced' => array(
                         'toggles' => array(
                             'text' => array(
-                                'title'    => esc_html__( 'Text', 'mc-dtm' ),
+                                'title'    => esc_html__( 'Text', 'mc-divi-title-module' ),
                                 'priority' => 49,
                             ),
                         ),
@@ -74,7 +74,7 @@ function mc_init_divi_title_module() {
                 $this->advanced_options = array(
                     'fonts' => array(
                         'text'   => array(
-                            'label'    => esc_html__( 'Text', 'mc-dtm' ),
+                            'label'    => esc_html__( 'Text', 'mc-divi-title-module' ),
                             'css'      => array(
                                 'main' => "{$this->main_css_element} .mc_title",
                                 'line_height' => "{$this->main_css_element} .mc_title",
@@ -119,61 +119,61 @@ function mc_init_divi_title_module() {
             function get_fields() {
                 $fields = array(
                     'title_level' => array(
-                        'label'             => esc_html__( 'Level', 'mc-dtm' ),
+                        'label'             => esc_html__( 'Level', 'mc-divi-title-module' ),
                         'type'              => 'select',
                         'option_category'   => 'basic_option',
                         'options'           => array(
-                            'h1' => esc_html__( 'H1', 'mc-dtm' ),
-                            'h2'  => esc_html__( 'H2', 'mc-dtm' ),
-                            'h3'  => esc_html__( 'H3', 'mc-dtm' ),
-                            'h4'  => esc_html__( 'H4', 'mc-dtm' ),
-                            'h5'  => esc_html__( 'H5', 'mc-dtm' ),
+                            'h1' => esc_html__( 'H1', 'mc-divi-title-module' ),
+                            'h2'  => esc_html__( 'H2', 'mc-divi-title-module' ),
+                            'h3'  => esc_html__( 'H3', 'mc-divi-title-module' ),
+                            'h4'  => esc_html__( 'H4', 'mc-divi-title-module' ),
+                            'h5'  => esc_html__( 'H5', 'mc-divi-title-module' ),
                         ),
                         'tab_slug'          => 'general',
                         'toggle_slug'       => 'main_content',
-                        'description'       => esc_html__( 'Choose the level title', 'mc-dtm' ),
+                        'description'       => esc_html__( 'Choose the level title', 'mc-divi-title-module' ),
                     ),
                     'background_layout' => array(
-                        'label'             => esc_html__( 'Text Color', 'mc-dtm' ),
+                        'label'             => esc_html__( 'Text Color', 'mc-divi-title-module' ),
                         'type'              => 'select',
                         'option_category'   => 'configuration',
                         'options'           => array(
-                            'light' => esc_html__( 'Dark', 'mc-dtm' ),
-                            'dark'  => esc_html__( 'Light', 'mc-dtm' ),
+                            'light' => esc_html__( 'Dark', 'mc-divi-title-module' ),
+                            'dark'  => esc_html__( 'Light', 'mc-divi-title-module' ),
                         ),
                         'tab_slug'          => 'advanced',
                         'toggle_slug'       => 'text',
-                        'description'       => esc_html__( 'Here you can choose the value of your text. If you are working with a dark background, then your text should be set to light. If you are working with a light background, then your text should be dark.', 'mc-dtm' ),
+                        'description'       => esc_html__( 'Here you can choose the value of your text. If you are working with a dark background, then your text should be set to light. If you are working with a light background, then your text should be dark.', 'mc-divi-title-module' ),
                     ),
                     'content_title' => array(
-                        'label'           => esc_html__( 'Content', 'mc-dtm' ),
+                        'label'           => esc_html__( 'Content', 'mc-divi-title-module' ),
                         'type'            => 'text',
                         'option_category' => 'basic_option',
-                        'description'     => esc_html__( 'Here you can create the content that will be used within the module.', 'mc-dtm' ),
+                        'description'     => esc_html__( 'Here you can create the content that will be used within the module.', 'mc-divi-title-module' ),
                         'toggle_slug'     => 'main_content',
                     ),
                     'disabled_on' => array(
-                        'label'           => esc_html__( 'Disable on', 'mc-dtm' ),
+                        'label'           => esc_html__( 'Disable on', 'mc-divi-title-module' ),
                         'type'            => 'multiple_checkboxes',
                         'options'         => array(
-                            'phone'   => esc_html__( 'Phone', 'mc-dtm' ),
-                            'tablet'  => esc_html__( 'Tablet', 'mc-dtm' ),
-                            'desktop' => esc_html__( 'Desktop', 'mc-dtm' ),
+                            'phone'   => esc_html__( 'Phone', 'mc-divi-title-module' ),
+                            'tablet'  => esc_html__( 'Tablet', 'mc-divi-title-module' ),
+                            'desktop' => esc_html__( 'Desktop', 'mc-divi-title-module' ),
                         ),
                         'additional_att'  => 'disable_on',
                         'option_category' => 'configuration',
-                        'description'     => esc_html__( 'This will disable the module on selected devices', 'mc-dtm' ),
+                        'description'     => esc_html__( 'This will disable the module on selected devices', 'mc-divi-title-module' ),
                         'tab_slug'        => 'custom_css',
                         'toggle_slug'     => 'visibility',
                     ),
                     'admin_label' => array(
-                        'label'       => esc_html__( 'Admin Label', 'mc-dtm' ),
+                        'label'       => esc_html__( 'Admin Label', 'mc-divi-title-module' ),
                         'type'        => 'text',
-                        'description' => esc_html__( 'This will change the label of the module in the builder for easy identification.', 'mc-dtm' ),
+                        'description' => esc_html__( 'This will change the label of the module in the builder for easy identification.', 'mc-divi-title-module' ),
                         'toggle_slug' => 'admin_label',
                     ),
                     'module_id' => array(
-                        'label'           => esc_html__( 'CSS ID', 'mc-dtm' ),
+                        'label'           => esc_html__( 'CSS ID', 'mc-divi-title-module' ),
                         'type'            => 'text',
                         'option_category' => 'configuration',
                         'tab_slug'        => 'custom_css',
@@ -181,7 +181,7 @@ function mc_init_divi_title_module() {
                         'option_class'    => 'et_pb_custom_css_regular',
                     ),
                     'module_class' => array(
-                        'label'           => esc_html__( 'CSS Class', 'mc-dtm' ),
+                        'label'           => esc_html__( 'CSS Class', 'mc-divi-title-module' ),
                         'type'            => 'text',
                         'option_category' => 'configuration',
                         'tab_slug'        => 'custom_css',
