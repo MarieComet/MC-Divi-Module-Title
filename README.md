@@ -12,6 +12,7 @@ WordPress Plugin
 * License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 This plugin adds a new module to the Divi builder, it allows to easily insert titles without going through the text module.
+<a href="https://fr.wordpress.org/plugins/mc-divi-title-module/">Link to the WordPress repository plugin page</a>
 
 Description
 ---------------
