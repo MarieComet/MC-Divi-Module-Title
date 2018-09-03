@@ -5,9 +5,9 @@ WordPress Plugin
 * Author: Marie Comet
 * Tags: divi,divi builder,divi module,divi title
 * Requires at least: 4.4
-* Tested up to: 4.8
+* Tested up to: 4.9.8
 * Requires PHP: 5.2.4
-* Stable tag: 1.0.1
+* Stable tag: 1.0.2
 * License: GPLv2 or later
 * License URI: https://www.gnu.org/licenses/gpl-2.0.html
 

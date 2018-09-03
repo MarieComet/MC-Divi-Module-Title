@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mc-divi-title-module\n"
-"POT-Creation-Date: 2017-09-29 11:34+0200\n"
-"PO-Revision-Date: 2017-09-29 11:35+0200\n"
+"POT-Creation-Date: 2018-09-03 13:03+0200\n"
+"PO-Revision-Date: 2018-09-03 13:03+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -21,56 +21,56 @@ msgstr ""
 msgid "Divi Title Module require the Divi Builder or the Divi theme to work"
 msgstr "Divi Title Module requiert le builder de Divi ou le thème Divi."
 
-#: mc-divi-title-module.php:39
+#: mc-divi-title-module.php:39 mc-divi-title-module.php:59
+#: mc-divi-title-module.php:69
 msgid "Title"
 msgstr "Titre"
 
-#: mc-divi-title-module.php:60 mc-divi-title-module.php:66
-#: mc-divi-title-module.php:77
+#: mc-divi-title-module.php:53
 msgid "Text"
 msgstr "Texte"
 
-#: mc-divi-title-module.php:122
+#: mc-divi-title-module.php:85
 msgid "Level"
 msgstr "Niveau"
 
-#: mc-divi-title-module.php:126
+#: mc-divi-title-module.php:90
 msgid "H1"
 msgstr "H1"
 
-#: mc-divi-title-module.php:127
+#: mc-divi-title-module.php:91
 msgid "H2"
 msgstr "H2"
 
-#: mc-divi-title-module.php:128
+#: mc-divi-title-module.php:92
 msgid "H3"
 msgstr "H3"
 
-#: mc-divi-title-module.php:129
+#: mc-divi-title-module.php:93
 msgid "H4"
 msgstr "H4"
 
-#: mc-divi-title-module.php:130
+#: mc-divi-title-module.php:94
 msgid "H5"
 msgstr "H5"
 
-#: mc-divi-title-module.php:134
+#: mc-divi-title-module.php:98
 msgid "Choose the level title"
 msgstr "Choisissez le niveau du titre"
 
-#: mc-divi-title-module.php:137
+#: mc-divi-title-module.php:101
 msgid "Text Color"
 msgstr "Couleur du texte"
 
-#: mc-divi-title-module.php:141
+#: mc-divi-title-module.php:105
 msgid "Dark"
 msgstr "Foncé"
 
-#: mc-divi-title-module.php:142
+#: mc-divi-title-module.php:106
 msgid "Light"
 msgstr "Clair"
 
-#: mc-divi-title-module.php:146
+#: mc-divi-title-module.php:110
 msgid ""
 "Here you can choose the value of your text. If you are working with a dark "
 "background, then your text should be set to light. If you are working with a "
@@ -80,52 +80,43 @@ msgstr ""
 "un fond foncé, vous devez choisir un texte clair. Si votre arrière-plan est "
 "clair, choisissez un texte foncé."
 
-#: mc-divi-title-module.php:149
+#: mc-divi-title-module.php:113
 msgid "Content"
 msgstr "Contenu"
 
-#: mc-divi-title-module.php:152
+#: mc-divi-title-module.php:116
 msgid "Here you can create the content that will be used within the module."
 msgstr "Ici, vous pouvez créer le contenu qui sera utilisé dans le module."
 
-#: mc-divi-title-module.php:156
-msgid "Disable on"
-msgstr "Désactiver pour"
+#~ msgid "Disable on"
+#~ msgstr "Désactiver pour"
 
-#: mc-divi-title-module.php:159
-msgid "Phone"
-msgstr "Téléphone"
+#~ msgid "Phone"
+#~ msgstr "Téléphone"
 
-#: mc-divi-title-module.php:160
-msgid "Tablet"
-msgstr "Tablette"
+#~ msgid "Tablet"
+#~ msgstr "Tablette"
 
-#: mc-divi-title-module.php:161
-msgid "Desktop"
-msgstr "Bureau"
+#~ msgid "Desktop"
+#~ msgstr "Bureau"
 
-#: mc-divi-title-module.php:165
-msgid "This will disable the module on selected devices"
-msgstr "Cela désactivera le module sur les appareils sélectionnés"
+#~ msgid "This will disable the module on selected devices"
+#~ msgstr "Cela désactivera le module sur les appareils sélectionnés"
 
-#: mc-divi-title-module.php:170
-msgid "Admin Label"
-msgstr "Étiquette Admin"
+#~ msgid "Admin Label"
+#~ msgstr "Étiquette Admin"
 
-#: mc-divi-title-module.php:172
-msgid ""
-"This will change the label of the module in the builder for easy "
-"identification."
-msgstr ""
-"Cela changera la dénomination du module pour une meilleure identification."
+#~ msgid ""
+#~ "This will change the label of the module in the builder for easy "
+#~ "identification."
+#~ msgstr ""
+#~ "Cela changera la dénomination du module pour une meilleure identification."
 
-#: mc-divi-title-module.php:176
-msgid "CSS ID"
-msgstr "Identifiant CSS"
+#~ msgid "CSS ID"
+#~ msgstr "Identifiant CSS"
 
-#: mc-divi-title-module.php:184
-msgid "CSS Class"
-msgstr "Classe CSS"
+#~ msgid "CSS Class"
+#~ msgstr "Classe CSS"
 
 #~ msgid "Text Orientation"
 #~ msgstr "Orientation du texte"
