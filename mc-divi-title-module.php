@@ -7,7 +7,7 @@
  * Author: Marie Comet
  * Author URI: http://mariecomet.fr/
  * Requires at least: 4.4
- * Tested up to: 4.9.8
+ * Tested up to: 5.4
  *
  * Text Domain: mc-divi-title-module
  * Domain Path: /i18n/languages
