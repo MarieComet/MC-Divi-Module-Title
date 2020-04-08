@@ -1,6 +1,6 @@
 === Divi Title Module ===
 Contributors: chaton666
-Tags: divi,divi builder,divi module,divi title
+Tags: adopt-me,divi,divi builder,divi module,divi title
 Requires at least: 4.4
 Tested up to: 5.4
 Requires PHP: 5.2.4
