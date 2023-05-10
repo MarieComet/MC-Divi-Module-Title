@@ -3,11 +3,11 @@
  * Plugin Name: Divi Title Module
  * Plugin URI: https://github.com/MarieComet/MC-Divi-Module-Title/
  * Description: This plugin adds a new module to the Divi builder, it allows to easily insert titles without going through the text module.
- * Version: 1.0.2
+ * Version: 1.0.3
  * Author: Marie Comet
  * Author URI: http://mariecomet.fr/
  * Requires at least: 4.4
- * Tested up to: 5.4
+ * Tested up to: 6.2
  *
  * Text Domain: mc-divi-title-module
  * Domain Path: /i18n/languages
@@ -27,6 +27,16 @@ function mc_dtm_admin_notice() {
     </div>  
     <?php
 }
+
+/**
+ * Divi check.
+ *
+ * @since 1.0.3
+ */
+function check_divi() {
+    if ( !class_exists('ET_Builder_Plugin') ) add_action('admin_notices', 'mc_dtm_admin_notice');
+}
+add_action( 'plugins_loaded', 'check_divi' );
 
 function mc_init_divi_title_module() {
 
@@ -92,6 +102,7 @@ function mc_init_divi_title_module() {
                             'h3'  => esc_html__( 'H3', 'mc-divi-title-module' ),
                             'h4'  => esc_html__( 'H4', 'mc-divi-title-module' ),
                             'h5'  => esc_html__( 'H5', 'mc-divi-title-module' ),
+                            'h6'  => esc_html__( 'H6', 'mc-divi-title-module' ),
                         ),
                         'tab_slug'          => 'general',
                         'toggle_slug'       => 'main_content',
@@ -121,7 +132,7 @@ function mc_init_divi_title_module() {
                 return $fields;
             }
 
-            function render( $attrs, $content = null, $render_slug ) {
+            function render( $attrs, $content, $render_slug ) {
                 $title                = $this->props['content_title'];
                 $title_level          = $this->props['title_level'];
 
@@ -135,9 +146,6 @@ function mc_init_divi_title_module() {
             }
         }
         new ET_Builder_Module_Title;
-    } else {
-        add_action( 'admin_notices', 'mc_dtm_admin_notice' );
-        return;
     }
 }
 add_action('et_builder_ready', 'mc_init_divi_title_module');
